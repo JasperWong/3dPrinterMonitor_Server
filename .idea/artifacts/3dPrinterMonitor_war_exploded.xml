@@ -1,10 +1,10 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="SmartBicycle_Server:war exploded">
+  <artifact type="exploded-war" name="3dPrinterMonitor:war exploded">
     <output-path>$PROJECT_DIR$/target/SmartBicycle_Server</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="SmartBicycle_Server" />
+          <element id="module-output" name="3dPrinterMonitor" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.springframework:spring-core:4.1.4.RELEASE" />
@@ -46,7 +46,7 @@
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/SmartBicycle_Server/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="SmartBicycle_Server/web/Web" />
+      <element id="javaee-facet-resources" facet="3dPrinterMonitor/web/Web" />
     </root>
   </artifact>
 </component>
