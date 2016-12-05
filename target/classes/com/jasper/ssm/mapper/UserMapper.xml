@@ -4,9 +4,9 @@
   <resultMap id="BaseResultMap" type="com.jasper.ssm.pojo.User" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="username" property="username" jdbcType="VARCHAR" />
-    <result column="switch1" property="switch1" jdbcType="TINYINT"/>
-    <result column="switch2" property="switch2" jdbcType="TINYINT"/>
-    <result column="camera" property="camera" jdbcType="TINYINT"/>
+    <result column="switch1" property="switch1" jdbcType="INTEGER"/>
+    <result column="switch2" property="switch2" jdbcType="INTEGER"/>
+    <result column="camera" property="camera" jdbcType="INTEGER"/>
     <!--<result column="date" property="date" jdbcType="VARCHAR" />-->
     <!--<result column="distanceDay" property="distanceDay" jdbcType="FLOAT" />-->
     <!--<result column="distanceTotal" property="distanceTotal" jdbcType="FLOAT" />-->
@@ -76,7 +76,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List" >
-    id, username,date,distanceDay,distanceTotal,hourTotal,timesTotal
+    id, username,switch1,switch2,camera
   </sql>
 
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.jasper.ssm.pojo.UserExample" >
@@ -85,7 +85,7 @@
       distinct
     </if>
     <include refid="Base_Column_List" />
-    from user_day
+    from printer_info
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" /></if>
     <if test="orderByClause != null" >
@@ -96,7 +96,7 @@
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
     <include refid="Base_Column_List" />
-    from user
+    from printer_info
     where id = #{id,jdbcType=INTEGER}
   </select>
 

@@ -2,9 +2,12 @@ package com.jasper.ssm.action;
 
 import com.jasper.ssm.pojo.User;
 import com.jasper.ssm.service.UserService;
+import org.apache.struts2.ServletActionContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.text.DateFormat;
 import java.util.Date;
 import java.util.List;
@@ -20,48 +23,58 @@ public class UserAction {
     //自动注解UserService
     @Autowired
     private UserService userService;
+
     private String title;
-    private User user1;
+    private User SelectedUser;
     private List<User> users;
-    private Integer id=0;
+    private Integer id;
+    private String username;
+    private Integer switch1;
+    private Integer switch2;
+    private Integer camera;
+
+    private Integer SelectId;
+    private Integer SelectSwitch1;
+    private Integer SelectSwitch2;
+    private Integer SelectCamera;
+
+    private String SelectUsername;
+
 
     //action 默认执行的入口
     public String execute(){
-        if(id!=0){
-            userService.delete(id);
+        if(SelectId!=0){
+            SelectedUser=userService.SelectById(SelectId);
+            SelectId=SelectedUser.getId();
+            SelectUsername=SelectedUser.getUsername();
+            SelectSwitch1=SelectedUser.getSwitch1();
+            SelectSwitch2=SelectedUser.getSwitch2();
+            SelectCamera=SelectedUser.getCamera();
         }
-        try {
-            //取出所有user
-            users=userService.findUser();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-//        user.setUsername("123");
-//        user.setSex("女");
-//        user.setAddress("3421");
-        //设置标题
-//        title="当前时间:"+new Date();
-        title=""+ DateFormat.getDateTimeInstance(2, 2, Locale.CHINESE).format(new java.util.Date());
-// user1=new User();
+
         return "success";
     }
 
-    /***
-     * 以下是 getter setter 在jsp里要调用我们的 title 和 users 就必须写setter getter方法,不然
-     * 没法取到或设置其值.
-     * ****/
-    /**
-     *
-     * @return
-     */
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
+//    public void doAction() throws IOException {
+//        HttpServletResponse response=ServletActionContext.getResponse();
+//        //以下代码从JSON.java中拷过来的
+//        response.setContentType("text/html");
+//        PrintWriter out;
+//        out = response.getWriter();
+//        //将要被返回到客户端的对象
+//        User user=new User();
+//        user.setId(SelectId);
+//        user.setUsername(SelectUsername);
+//        user.setSwitch1(SelectSwitch1);
+//        user.setSwitch2(SelectSwitch2);
+//        user.setCamera(SelectCamera);
+//        JSONObject json=new JSONObject();
+//        json.accumulate("success", true);
+//        json.accumulate("user", user);
+//        out.println(json.toString());
+//        out.flush();
+//        out.close();
+//    }
     public List<User> getUsers() {
         return users;
     }
@@ -70,19 +83,50 @@ public class UserAction {
         this.users = users;
     }
 
-    public User getUser() {
-        return user1;
+/***
+     * 以下是 getter setter 在jsp里要调用我们的 title 和 users 就必须写setter getter方法,不然
+     * 没法取到或设置其值.
+     * ****/
+    /**
+     *
+     * @return
+     */
+    public String getSelectUsername() {
+        return SelectUsername;
     }
 
-    public void setUser(User user) {
-        this.user1 = user;
+    public void setSelectUsername(String selectUsername) {
+        SelectUsername = selectUsername;
     }
 
-    public Integer getId() {
-        return id;
+    public Integer getSelectId() {
+        return SelectId;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setSelectId(Integer selectId) {
+        SelectId = selectId;
+    }
+    public Integer getSelectSwitch1() {
+        return SelectSwitch1;
+    }
+
+    public void setSelectSwitch1(Integer selectSwitch1) {
+        SelectSwitch1 = selectSwitch1;
+    }
+
+    public Integer getSelectSwitch2() {
+        return SelectSwitch2;
+    }
+
+    public void setSelectSwitch2(Integer selectSwitch2) {
+        SelectSwitch2 = selectSwitch2;
+    }
+
+    public Integer getSelectCamera() {
+        return SelectCamera;
+    }
+
+    public void setSelectCamera(Integer selectCamera) {
+        SelectCamera = selectCamera;
     }
 }

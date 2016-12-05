@@ -18,5 +18,6 @@ public interface UserService {
     void delete(Integer id);
     void insertUser(User user);
     void updateUser(User user);
+    User SelectById(Integer id);
     Boolean saveUser(User user) throws  Exception;
 }

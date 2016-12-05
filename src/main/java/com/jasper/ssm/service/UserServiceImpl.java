@@ -35,4 +35,9 @@ public class UserServiceImpl implements UserService {
     public Boolean saveUser(User user) throws Exception {
         return userMapper.insertSelective(user)==1;
     }
+
+    public User SelectById(Integer id){
+        User user=userMapper.selectByPrimaryKey(id);
+        return user;
+    }
 }
