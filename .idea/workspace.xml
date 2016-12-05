@@ -2,23 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f077aa2-5fc4-4a9c-962e-d3fa5e633c52" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/action/UserAction.class" afterPath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/action/UserAction.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/service/UserService.class" afterPath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/service/UserService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/service/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/service/UserServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jasper/ssm/action/UserAction.class" afterPath="$PROJECT_DIR$/target/classes/com/jasper/ssm/action/UserAction.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jasper/ssm/service/UserService.class" afterPath="$PROJECT_DIR$/target/classes/com/jasper/ssm/service/UserService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jasper/ssm/service/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/jasper/ssm/service/UserServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3dPrinterMonitor.iml" afterPath="$PROJECT_DIR$/3dPrinterMonitor.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/action/UserAction.java" afterPath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/action/UserAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/service/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/service/UserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/jasper/ssm/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/com/jasper/ssm/mapper/UserMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config/struts2/struts-user.xml" afterPath="$PROJECT_DIR$/src/main/resources/config/struts2/struts-user.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/mapper/UserMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/config/struts2/struts-user.xml" afterPath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/config/struts2/struts-user.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/views/user.jsp" afterPath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/views/user.jsp" />
@@ -85,8 +76,8 @@
       <file leaf-file-name="user.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.046248715">
-              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.64748204">
+              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -1162,7 +1153,7 @@
       <option name="number" value="Default" />
       <updated>1480872365089</updated>
       <workItem from="1480872366427" duration="17437000" />
-      <workItem from="1480928015995" duration="15429000" />
+      <workItem from="1480928015995" duration="15506000" />
     </task>
     <task id="LOCAL-00001" summary="finish update">
       <created>1480909320038</created>
@@ -1170,11 +1161,17 @@
       <option name="project" value="LOCAL" />
       <updated>1480909320038</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="finish response">
+      <created>1480960869968</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1480960869968</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32866000" />
+    <option name="totallyTimeSpent" value="32943000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="2762" height="1770" extended-state="6" />
@@ -1222,7 +1219,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="finish update" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish update" />
+    <MESSAGE value="finish response" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish response" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1755,8 +1753,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.046248715">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.64748204">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
           <folding />
         </state>
       </provider>
