@@ -4,11 +4,14 @@
   <resultMap id="BaseResultMap" type="com.jasper.ssm.pojo.User" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="username" property="username" jdbcType="VARCHAR" />
-    <result column="date" property="date" jdbcType="VARCHAR" />
-    <result column="distanceDay" property="distanceDay" jdbcType="FLOAT" />
-    <result column="distanceTotal" property="distanceTotal" jdbcType="FLOAT" />
-    <result column="hourTotal" property="hourTotal" jdbcType="FLOAT" />
-    <result column="timesTotal" property="timesTotal" jdbcType="INTEGER" />
+    <result column="switch1" property="switch1" jdbcType="TINYINT"/>
+    <result column="switch2" property="switch2" jdbcType="TINYINT"/>
+    <result column="camera" property="camera" jdbcType="TINYINT"/>
+    <!--<result column="date" property="date" jdbcType="VARCHAR" />-->
+    <!--<result column="distanceDay" property="distanceDay" jdbcType="FLOAT" />-->
+    <!--<result column="distanceTotal" property="distanceTotal" jdbcType="FLOAT" />-->
+    <!--<result column="hourTotal" property="hourTotal" jdbcType="FLOAT" />-->
+    <!--<result column="timesTotal" property="timesTotal" jdbcType="INTEGER" />-->
     <!--<result column="birthday" property="birthday" jdbcType="DATE" />-->
     <!--<result column="sex" property="sex" jdbcType="CHAR" />-->
     <!--<result column="address" property="address" jdbcType="VARCHAR" />-->
@@ -42,6 +45,7 @@
       </foreach>
     </where>
   </sql>
+
   <sql id="Update_By_Example_Where_Clause" >
     <where >
       <foreach collection="example.oredCriteria" item="criteria" separator="or" >
@@ -74,6 +78,7 @@
   <sql id="Base_Column_List" >
     id, username,date,distanceDay,distanceTotal,hourTotal,timesTotal
   </sql>
+
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.jasper.ssm.pojo.UserExample" >
     select
     <if test="distinct" >
@@ -82,18 +87,19 @@
     <include refid="Base_Column_List" />
     from user_day
     <if test="_parameter != null" >
-      <include refid="Example_Where_Clause" />
-    </if>
+      <include refid="Example_Where_Clause" /></if>
     <if test="orderByClause != null" >
       order by ${orderByClause}
     </if>
   </select>
+
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
     <include refid="Base_Column_List" />
     from user
     where id = #{id,jdbcType=INTEGER}
   </select>
+
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from user_day
     where id = #{id,jdbcType=INTEGER}
@@ -146,12 +152,14 @@
       </if>
     </trim>
   </insert>
+
   <select id="countByExample" parameterType="com.jasper.ssm.pojo.UserExample" resultType="java.lang.Integer" >
     select count(*) from user
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
     </if>
   </select>
+
   <update id="updateByExampleSelective" parameterType="map" >
     update user
     <set >
@@ -175,6 +183,7 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
+
   <update id="updateByExample" parameterType="map" >
     update user
     set id = #{record.id,jdbcType=INTEGER},
@@ -186,6 +195,7 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
+
   <update id="updateByPrimaryKeySelective" parameterType="com.jasper.ssm.pojo.User" >
     update user
     <set >
@@ -204,29 +214,38 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.jasper.ssm.pojo.User" >
-    update user
-    set username = #{username,jdbcType=VARCHAR},
-      birthday = #{birthday,jdbcType=DATE},
-      sex = #{sex,jdbcType=CHAR},
-      address = #{address,jdbcType=VARCHAR}
-    where id = #{id,jdbcType=INTEGER}
-  </update>
+
+  <!--<update id="updateByPrimaryKey" parameterType="com.jasper.ssm.pojo.User" >-->
+    <!--update user-->
+    <!--set username = #{username,jdbcType=VARCHAR},-->
+      <!--birthday = #{birthday,jdbcType=DATE},-->
+      <!--sex = #{sex,jdbcType=CHAR},-->
+      <!--address = #{address,jdbcType=VARCHAR}-->
+    <!--where id = #{id,jdbcType=INTEGER}-->
+  <!--</update>-->
+
+    <update id="updateByPrimaryKey" parameterType="com.jasper.ssm.pojo.User" >
+        update user
+        set username = #{username,jdbcType=VARCHAR},
+        switch1 = #{switch1,jdbcType=TINYINT},
+        switch2 = #{switch2,jdbcType=TINYINT},
+        camera = #{camera,jdbcType=TINYINT}
+        where id = #{id,jdbcType=INTEGER}
+    </update>
 
     <update id="update">
-    insert INTO user_day
-        (id, username, date,distanceDay,distanceTotal,
-        hourTotal, timesTotal)
+    insert INTO printer_info
+        (id, username,switch1,switch2,camera)
     VALUES
     <!--<foreach collection="list" index="index" item="item"-->
              <!--separator=",">-->
-        (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{date,jdbcType=VARCHAR},#{distanceDay,jdbcType=FLOAT},
-         #{distanceTotal,jdbcType=FLOAT},#{hourTotal,jdbcType=FLOAT}, #{timesTotal,jdbcType=INTEGER})
+        (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{switch1,jdbcType=INTEGER},#{switch2,jdbcType=INTEGER},
+         #{camera,jdbcType=INTEGER})
     <!--</foreach>-->
     ON DUPLICATE KEY UPDATE
-        distanceDay = #{distanceDay,jdbcType=FLOAT},
-        distanceTotal = #{distanceTotal,jdbcType=FLOAT},
-        hourTotal = #{hourTotal,jdbcType=FLOAT},
-        timesTotal = #{timesTotal,jdbcType=INTEGER}
+        username=#{username,jdbcType=VARCHAR},
+        switch1 = #{switch1,jdbcType=INTEGER},
+        switch2 = #{switch2,jdbcType=INTEGER},
+        camera = #{camera,jdbcType=INTEGER}
 </update>
         </mapper>

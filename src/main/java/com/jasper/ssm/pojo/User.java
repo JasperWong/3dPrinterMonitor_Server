@@ -4,21 +4,38 @@ import java.util.Date;
 
 public class User {
     private Integer id;
-
     private String username;
+    private Integer switch1;
+    private Integer switch2;
+    private Integer camera;
 
-    private String date;
+    public Integer getSwitch1() {
+        return switch1;
+    }
 
-    private float distanceTotal;
+    public void setSwitch1(Integer switch1) {
+        this.switch1 = switch1;
+    }
 
-    private float distanceDay;
+    public Integer getSwitch2() {
+        return switch2;
+    }
 
-    private float hourTotal;
+    public void setSwitch2(Integer switch2) {
+        this.switch2 = switch2;
+    }
 
-    private int timesTotal;
+    public Integer getCamera() {
+        return camera;
+    }
+
+    public void setCamera(Integer camera) {
+        this.camera = camera;
+    }
 
     public Integer getId() {
         return id;
+
     }
 
     public void setId(Integer id) {
@@ -31,45 +48,6 @@ public class User {
 
     public void setUsername(String username) {
         this.username = username == null ? null : username.trim();
-    }
-    public String getDate() {
-        return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
-    }
-
-    public float getDistanceTotal() {
-        return distanceTotal;
-    }
-
-    public void setDistanceTotal(float distanceTotal) {
-        this.distanceTotal = distanceTotal;
-    }
-
-    public float getDistanceDay() {
-        return distanceDay;
-    }
-
-    public void setDistanceDay(float distanceDay) {
-        this.distanceDay = distanceDay;
-    }
-
-    public float getHourTotal() {
-        return hourTotal;
-    }
-
-    public void setHourTotal(float hourTotal) {
-        this.hourTotal = hourTotal;
-    }
-
-    public int getTimesTotal() {
-        return timesTotal;
-    }
-
-    public void setTimesTotal(int timesTotal) {
-        this.timesTotal = timesTotal;
     }
 
  }

@@ -6,7 +6,7 @@ import com.jasper.ssm.pojo.UserExample;
 import java.util.List;
 
 /**
- * Created by lulee007 on 16/1/19.
+ * Created by JasperWong on 16/1/19.
  */
 public interface UserService {
     /**

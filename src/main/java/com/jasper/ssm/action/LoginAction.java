@@ -21,46 +21,28 @@ import java.util.concurrent.ExecutionException;
 public class LoginAction {
     @Autowired
     private UserService userService;
-
-    private Integer id;
-
-    private String username;
-
-    private String date;
-
-    private float distanceTotal;
-
-    private float distanceDay;
-
-    private float hourTotal;
-
-    private int timesTotal;
     private User user=new User();
+    private Integer id;
+    private String username;
+    private Integer switch1;
+    private Integer switch2;
+    private Integer camera;
+//    private Integer form;   //form:0->get,1->set
+
+    private Integer dbSwitch1;
+    private Integer dbSwitch2;
+    private Integer dbCamera;
 
     public String execute(){
-        if(username!=null) {
-            user.setId(id);
-            user.setUsername(username);
-            user.setDate(date);
-            user.setDistanceDay(distanceDay);
-            user.setDistanceTotal(distanceTotal);
-            user.setHourTotal(hourTotal);
-            user.setTimesTotal(timesTotal);
-//            userService.insertUser(user);
-            userService.updateUser(user);
-        }
-//        System.out.print(username);
+        user.setId(id);
+        user.setUsername(username);
+        user.setCamera(camera);
+        user.setSwitch1(switch1);
+        user.setSwitch2(switch2);
+        userService.updateUser(user);
         return "success";
     }
 
-//    public String login(Login user, Model model) throws Exception {
-//        user= loginService.checkLogin(user.getUsername(), user.getPassword());
-//        if(user!=null){
-//            model.addAttribute(user);
-//            return "welcome";// 路径 WEB-INF/pages/welcome.jsp
-//        }
-//        return "fail";
-//    }
     public String getUsername() {
         return username;
     }
@@ -68,6 +50,7 @@ public class LoginAction {
     public void setUsername(String username) {
         this.username = username;
     }
+
     public UserService getUserService() {
         return userService;
     }
@@ -76,51 +59,43 @@ public class LoginAction {
         this.userService = userService;
     }
 
-    public Integer getId() {
-        return id;
-    }
-
     public void setId(Integer id) {
         this.id = id;
     }
 
-    public String getDate() {
-        return date;
+    public Integer getId() {
+        return id;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public Integer getSwitch1() {
+        return switch1;
     }
 
-    public float getDistanceTotal() {
-        return distanceTotal;
+    public void setSwitch1(Integer switch1) {
+        this.switch1 = switch1;
     }
 
-    public void setDistanceTotal(float distanceTotal) {
-        this.distanceTotal = distanceTotal;
+    public Integer getCamera() {
+        return camera;
     }
 
-    public float getDistanceDay() {
-        return distanceDay;
+    public void setCamera(Integer camera) {
+        this.camera = camera;
     }
 
-    public void setDistanceDay(float distanceDay) {
-        this.distanceDay = distanceDay;
+    public User getUser() {
+        return user;
     }
 
-    public float getHourTotal() {
-        return hourTotal;
+    public void setUser(User user) {
+        this.user = user;
     }
 
-    public void setHourTotal(float hourTotal) {
-        this.hourTotal = hourTotal;
+    public Integer getSwitch2() {
+        return switch2;
     }
 
-    public int getTimesTotal() {
-        return timesTotal;
-    }
-
-    public void setTimesTotal(int timesTotal) {
-        this.timesTotal = timesTotal;
+    public void setSwitch2(Integer switch2) {
+        this.switch2 = switch2;
     }
 }
