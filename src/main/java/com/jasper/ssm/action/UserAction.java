@@ -51,7 +51,6 @@ public class UserAction {
             SelectSwitch2=SelectedUser.getSwitch2();
             SelectCamera=SelectedUser.getCamera();
         }
-
         return "success";
     }
 
