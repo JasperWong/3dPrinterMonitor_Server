@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_3dprintermonitor" default="compile.module.3dprintermonitor">
+  <dirname property="module.3dprintermonitor.basedir" file="${ant.file.module_3dprintermonitor}"/>
+  
+  <property name="module.jdk.home.3dprintermonitor" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.3dprintermonitor" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.3dprintermonitor" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.3dprintermonitor" value="-encoding UTF-8 -source 1.5 -target 1.5 ${compiler.args}"/>
+  
+  <property name="3dprintermonitor.output.dir" value="${module.3dprintermonitor.basedir}/target/classes"/>
+  <property name="3dprintermonitor.testoutput.dir" value="${module.3dprintermonitor.basedir}/target/test-classes"/>
+  
+  <path id="3dprintermonitor.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="3dprintermonitor.module.production.classpath">
+    <path refid="${module.jdk.classpath.3dprintermonitor}"/>
+    <path refid="library.maven:_org.springframework:spring-core:4.1.4.release.classpath"/>
+    <path refid="library.maven:_commons-logging:commons-logging:1.2.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-jdbc:4.1.4.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-beans:4.1.4.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-tx:4.1.4.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-web:4.1.4.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-aop:4.1.4.release.classpath"/>
+    <path refid="library.maven:_aopalliance:aopalliance:1.0.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-context:4.1.4.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-expression:4.1.4.release.classpath"/>
+    <path refid="library.maven:_org.apache.struts:struts2-core:2.3.15.3.classpath"/>
+    <path refid="library.maven:_org.apache.struts.xwork:xwork-core:2.3.15.3.classpath"/>
+    <path refid="library.maven:_asm:asm:3.3.classpath"/>
+    <path refid="library.maven:_asm:asm-commons:3.3.classpath"/>
+    <path refid="library.maven:_asm:asm-tree:3.3.classpath"/>
+    <path refid="library.maven:_org.freemarker:freemarker:2.3.19.classpath"/>
+    <path refid="library.maven:_ognl:ognl:3.0.6.classpath"/>
+    <path refid="library.maven:_javassist:javassist:3.11.0.ga.classpath"/>
+    <path refid="library.maven:_commons-fileupload:commons-fileupload:1.3.classpath"/>
+    <path refid="library.maven:_commons-io:commons-io:2.0.1.classpath"/>
+    <path refid="library.maven:_org.apache.struts:struts2-spring-plugin:2.3.15.3.classpath"/>
+    <path refid="library.maven:_org.apache.commons:commons-lang3:3.1.classpath"/>
+    <path refid="library.maven:_org.apache.struts:struts2-json-plugin:2.3.15.3.classpath"/>
+    <path refid="library.maven:_org.apache.struts:struts2-config-browser-plugin:2.3.15.3.classpath"/>
+    <path refid="library.maven:_org.mybatis:mybatis:3.2.3.classpath"/>
+    <path refid="library.maven:_org.mybatis:mybatis-spring:1.2.1.classpath"/>
+    <path refid="library.maven:_log4j:log4j:1.2.17.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-log4j12:1.7.5.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-api:1.7.5.classpath"/>
+    <path refid="library.maven:_mysql:mysql-connector-java:5.1.6.classpath"/>
+    <path refid="library.maven:_c3p0:c3p0:0.9.1.2.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-container-default:1.0-alpha-9-stable-1.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-utils:1.0.4.classpath"/>
+    <path refid="library.maven:_classworlds:classworlds:1.1-alpha-2.classpath"/>
+    <path refid="library.java_ee_6-java_ee_6.classpath"/>
+    <pathelement location="${basedir}/json-lib-0.9.jar"/>
+    <pathelement location="${basedir}/json-lib-0.7.1.jar"/>
+  </path>
+  
+  <path id="3dprintermonitor.runtime.production.module.classpath">
+    <pathelement location="${3dprintermonitor.output.dir}"/>
+    <path refid="library.maven:_org.springframework:spring-core:4.1.4.release.classpath"/>
+    <path refid="library.maven:_commons-logging:commons-logging:1.2.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-jdbc:4.1.4.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-beans:4.1.4.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-tx:4.1.4.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-web:4.1.4.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-aop:4.1.4.release.classpath"/>
+    <path refid="library.maven:_aopalliance:aopalliance:1.0.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-context:4.1.4.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-expression:4.1.4.release.classpath"/>
+    <path refid="library.maven:_org.apache.struts:struts2-core:2.3.15.3.classpath"/>
+    <path refid="library.maven:_org.apache.struts.xwork:xwork-core:2.3.15.3.classpath"/>
+    <path refid="library.maven:_asm:asm:3.3.classpath"/>
+    <path refid="library.maven:_asm:asm-commons:3.3.classpath"/>
+    <path refid="library.maven:_asm:asm-tree:3.3.classpath"/>
+    <path refid="library.maven:_org.freemarker:freemarker:2.3.19.classpath"/>
+    <path refid="library.maven:_ognl:ognl:3.0.6.classpath"/>
+    <path refid="library.maven:_javassist:javassist:3.11.0.ga.classpath"/>
+    <path refid="library.maven:_commons-fileupload:commons-fileupload:1.3.classpath"/>
+    <path refid="library.maven:_commons-io:commons-io:2.0.1.classpath"/>
+    <path refid="library.maven:_org.apache.struts:struts2-spring-plugin:2.3.15.3.classpath"/>
+    <path refid="library.maven:_org.apache.commons:commons-lang3:3.1.classpath"/>
+    <path refid="library.maven:_org.apache.struts:struts2-json-plugin:2.3.15.3.classpath"/>
+    <path refid="library.maven:_org.apache.struts:struts2-config-browser-plugin:2.3.15.3.classpath"/>
+    <path refid="library.maven:_org.mybatis:mybatis:3.2.3.classpath"/>
+    <path refid="library.maven:_org.mybatis:mybatis-spring:1.2.1.classpath"/>
+    <path refid="library.maven:_log4j:log4j:1.2.17.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-log4j12:1.7.5.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-api:1.7.5.classpath"/>
+    <path refid="library.maven:_mysql:mysql-connector-java:5.1.6.classpath"/>
+    <path refid="library.maven:_c3p0:c3p0:0.9.1.2.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-container-default:1.0-alpha-9-stable-1.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-utils:1.0.4.classpath"/>
+    <path refid="library.maven:_classworlds:classworlds:1.1-alpha-2.classpath"/>
+    <path refid="library.java_ee_6-java_ee_6.classpath"/>
+    <pathelement location="${basedir}/json-lib-0.9.jar"/>
+    <pathelement location="${basedir}/json-lib-0.7.1.jar"/>
+  </path>
+  
+  <path id="3dprintermonitor.module.classpath">
+    <path refid="${module.jdk.classpath.3dprintermonitor}"/>
+    <pathelement location="${3dprintermonitor.output.dir}"/>
+    <path refid="library.maven:_junit:junit:4.11.classpath"/>
+    <path refid="library.maven:_org.hamcrest:hamcrest-core:1.3.classpath"/>
+    <path refid="library.maven:_javax.inject:javax.inject:1.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-test:4.1.4.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-core:4.1.4.release.classpath"/>
+    <path refid="library.maven:_commons-logging:commons-logging:1.2.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-jdbc:4.1.4.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-beans:4.1.4.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-tx:4.1.4.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-web:4.1.4.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-aop:4.1.4.release.classpath"/>
+    <path refid="library.maven:_aopalliance:aopalliance:1.0.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-context:4.1.4.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-expression:4.1.4.release.classpath"/>
+    <path refid="library.maven:_org.apache.struts:struts2-core:2.3.15.3.classpath"/>
+    <path refid="library.maven:_org.apache.struts.xwork:xwork-core:2.3.15.3.classpath"/>
+    <path refid="library.maven:_asm:asm:3.3.classpath"/>
+    <path refid="library.maven:_asm:asm-commons:3.3.classpath"/>
+    <path refid="library.maven:_asm:asm-tree:3.3.classpath"/>
+    <path refid="library.maven:_org.freemarker:freemarker:2.3.19.classpath"/>
+    <path refid="library.maven:_ognl:ognl:3.0.6.classpath"/>
+    <path refid="library.maven:_javassist:javassist:3.11.0.ga.classpath"/>
+    <path refid="library.maven:_commons-fileupload:commons-fileupload:1.3.classpath"/>
+    <path refid="library.maven:_commons-io:commons-io:2.0.1.classpath"/>
+    <path refid="library.maven:_org.apache.struts:struts2-spring-plugin:2.3.15.3.classpath"/>
+    <path refid="library.maven:_org.apache.commons:commons-lang3:3.1.classpath"/>
+    <path refid="library.maven:_org.apache.struts:struts2-json-plugin:2.3.15.3.classpath"/>
+    <path refid="library.maven:_org.apache.struts:struts2-config-browser-plugin:2.3.15.3.classpath"/>
+    <path refid="library.maven:_org.mybatis:mybatis:3.2.3.classpath"/>
+    <path refid="library.maven:_org.mybatis:mybatis-spring:1.2.1.classpath"/>
+    <path refid="library.maven:_log4j:log4j:1.2.17.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-log4j12:1.7.5.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-api:1.7.5.classpath"/>
+    <path refid="library.maven:_mysql:mysql-connector-java:5.1.6.classpath"/>
+    <path refid="library.maven:_c3p0:c3p0:0.9.1.2.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-container-default:1.0-alpha-9-stable-1.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-utils:1.0.4.classpath"/>
+    <path refid="library.maven:_classworlds:classworlds:1.1-alpha-2.classpath"/>
+    <path refid="library.java_ee_6-java_ee_6.classpath"/>
+    <pathelement location="${basedir}/json-lib-0.9.jar"/>
+    <pathelement location="${basedir}/json-lib-0.7.1.jar"/>
+  </path>
+  
+  <path id="3dprintermonitor.runtime.module.classpath">
+    <pathelement location="${3dprintermonitor.testoutput.dir}"/>
+    <pathelement location="${3dprintermonitor.output.dir}"/>
+    <path refid="library.maven:_junit:junit:4.11.classpath"/>
+    <path refid="library.maven:_org.hamcrest:hamcrest-core:1.3.classpath"/>
+    <path refid="library.maven:_javax.inject:javax.inject:1.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-test:4.1.4.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-core:4.1.4.release.classpath"/>
+    <path refid="library.maven:_commons-logging:commons-logging:1.2.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-jdbc:4.1.4.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-beans:4.1.4.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-tx:4.1.4.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-web:4.1.4.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-aop:4.1.4.release.classpath"/>
+    <path refid="library.maven:_aopalliance:aopalliance:1.0.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-context:4.1.4.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-expression:4.1.4.release.classpath"/>
+    <path refid="library.maven:_org.apache.struts:struts2-core:2.3.15.3.classpath"/>
+    <path refid="library.maven:_org.apache.struts.xwork:xwork-core:2.3.15.3.classpath"/>
+    <path refid="library.maven:_asm:asm:3.3.classpath"/>
+    <path refid="library.maven:_asm:asm-commons:3.3.classpath"/>
+    <path refid="library.maven:_asm:asm-tree:3.3.classpath"/>
+    <path refid="library.maven:_org.freemarker:freemarker:2.3.19.classpath"/>
+    <path refid="library.maven:_ognl:ognl:3.0.6.classpath"/>
+    <path refid="library.maven:_javassist:javassist:3.11.0.ga.classpath"/>
+    <path refid="library.maven:_commons-fileupload:commons-fileupload:1.3.classpath"/>
+    <path refid="library.maven:_commons-io:commons-io:2.0.1.classpath"/>
+    <path refid="library.maven:_org.apache.struts:struts2-spring-plugin:2.3.15.3.classpath"/>
+    <path refid="library.maven:_org.apache.commons:commons-lang3:3.1.classpath"/>
+    <path refid="library.maven:_org.apache.struts:struts2-json-plugin:2.3.15.3.classpath"/>
+    <path refid="library.maven:_org.apache.struts:struts2-config-browser-plugin:2.3.15.3.classpath"/>
+    <path refid="library.maven:_org.mybatis:mybatis:3.2.3.classpath"/>
+    <path refid="library.maven:_org.mybatis:mybatis-spring:1.2.1.classpath"/>
+    <path refid="library.maven:_log4j:log4j:1.2.17.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-log4j12:1.7.5.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-api:1.7.5.classpath"/>
+    <path refid="library.maven:_mysql:mysql-connector-java:5.1.6.classpath"/>
+    <path refid="library.maven:_c3p0:c3p0:0.9.1.2.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-container-default:1.0-alpha-9-stable-1.classpath"/>
+    <path refid="library.maven:_org.codehaus.plexus:plexus-utils:1.0.4.classpath"/>
+    <path refid="library.maven:_classworlds:classworlds:1.1-alpha-2.classpath"/>
+    <path refid="library.java_ee_6-java_ee_6.classpath"/>
+    <pathelement location="${basedir}/json-lib-0.9.jar"/>
+    <pathelement location="${basedir}/json-lib-0.7.1.jar"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.3dprintermonitor">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.3dprintermonitor">
+    <patternset refid="excluded.from.module.3dprintermonitor"/>
+  </patternset>
+  
+  <path id="3dprintermonitor.module.sourcepath">
+    <dirset dir="${module.3dprintermonitor.basedir}">
+      <include name="src/main/java"/>
+      <include name="src/main/resources"/>
+    </dirset>
+  </path>
+  
+  <path id="3dprintermonitor.module.test.sourcepath">
+    <dirset dir="${module.3dprintermonitor.basedir}">
+      <include name="src/test/java"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.3dprintermonitor" depends="compile.module.3dprintermonitor.production,compile.module.3dprintermonitor.tests" description="Compile module 3dPrinterMonitor"/>
+  
+  <target name="compile.module.3dprintermonitor.production" depends="register.custom.compilers" description="Compile module 3dPrinterMonitor; production classes">
+    <mkdir dir="${3dprintermonitor.output.dir}"/>
+    <javac2 destdir="${3dprintermonitor.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.3dprintermonitor}/javac">
+      <compilerarg line="${compiler.args.3dprintermonitor}"/>
+      <bootclasspath refid="3dprintermonitor.module.bootclasspath"/>
+      <classpath refid="3dprintermonitor.module.production.classpath"/>
+      <src refid="3dprintermonitor.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.3dprintermonitor"/>
+    </javac2>
+    
+    <copy todir="${3dprintermonitor.output.dir}">
+      <fileset dir="${module.3dprintermonitor.basedir}/src/main/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.3dprintermonitor.basedir}/src/main/resources">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.3dprintermonitor.tests" depends="register.custom.compilers,compile.module.3dprintermonitor.production" description="compile module 3dPrinterMonitor; test classes" unless="skip.tests">
+    <mkdir dir="${3dprintermonitor.testoutput.dir}"/>
+    <javac2 destdir="${3dprintermonitor.testoutput.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.3dprintermonitor}/javac">
+      <compilerarg line="${compiler.args.3dprintermonitor}"/>
+      <bootclasspath refid="3dprintermonitor.module.bootclasspath"/>
+      <classpath refid="3dprintermonitor.module.classpath"/>
+      <src refid="3dprintermonitor.module.test.sourcepath"/>
+      <patternset refid="excluded.from.compilation.3dprintermonitor"/>
+    </javac2>
+    
+    <copy todir="${3dprintermonitor.testoutput.dir}">
+      <fileset dir="${module.3dprintermonitor.basedir}/src/test/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="clean.module.3dprintermonitor" description="cleanup module">
+    <delete dir="${3dprintermonitor.output.dir}"/>
+    <delete dir="${3dprintermonitor.testoutput.dir}"/>
+  </target>
+</project>
