@@ -42,13 +42,6 @@ public class UserServiceImplTest {
     }
 
     @Test
-    public void testFindUser() throws Exception {
-        //事先已经在数据库插入了一条数据
-        List<User> allUsers=userService.findUser();
-        assertEquals(allUsers.size(),1);
-    }
-
-    @Test
     public void testSaveUser() throws Exception {
         //测试 插入一条新数据
         User user=new User();

@@ -8,6 +8,8 @@ public class User {
     private Integer switch1;
     private Integer switch2;
     private Integer camera;
+    private float temperature;
+    private float humidity;
 
     public Integer getSwitch1() {
         return switch1;
@@ -35,7 +37,6 @@ public class User {
 
     public Integer getId() {
         return id;
-
     }
 
     public void setId(Integer id) {
@@ -50,4 +51,19 @@ public class User {
         this.username = username == null ? null : username.trim();
     }
 
- }
+    public float getTemperature() {
+        return temperature;
+    }
+
+    public void setTemperature(float temperature) {
+        this.temperature = temperature;
+    }
+
+    public float getHumidity() {
+        return humidity;
+    }
+
+    public void setHumidity(float humidity) {
+        this.humidity = humidity;
+    }
+}
