@@ -7,101 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f077aa2-5fc4-4a9c-962e-d3fa5e633c52" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/action/UserDayAction.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/mapper/LoginMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/mapper/UserDayMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/pojo/Login.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/pojo/UserDay.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/pojo/UserDayExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/pojo/UserExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/service/LoginService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/service/LoginServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/service/UserDayService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/service/UserDayServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/com/jasper/ssm/mapper/LoginMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/com/jasper/ssm/mapper/UserDayMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/config/struts2/struts-user.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userDay.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server.war" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/action/LoginAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/action/UserAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/action/UserDayAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/mapper/LoginMapper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/mapper/LoginMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/mapper/UserDayMapper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/mapper/UserDayMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/pojo/Login.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/pojo/UserDay.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/pojo/UserDayExample$Criteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/pojo/UserDayExample$Criterion.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/pojo/UserDayExample$GeneratedCriteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/pojo/UserDayExample.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/pojo/UserExample$Criteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/pojo/UserExample$Criterion.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/pojo/UserExample$GeneratedCriteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/pojo/UserExample.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/service/LoginService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/service/LoginServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/service/UserDayService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/service/UserDayServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/config/struts2/struts-login.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/config/struts2/struts-user.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/views/user.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/views/userDay.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/views/welcome.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/jasper/ssm/action/LoginAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/jasper/ssm/action/UserAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/jasper/ssm/action/UserDayAction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/jasper/ssm/mapper/LoginMapper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/jasper/ssm/mapper/LoginMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/jasper/ssm/mapper/UserDayMapper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/jasper/ssm/mapper/UserDayMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/jasper/ssm/pojo/Login.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/jasper/ssm/pojo/UserDay.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/jasper/ssm/pojo/UserDayExample$Criteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/jasper/ssm/pojo/UserDayExample$Criterion.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/jasper/ssm/pojo/UserDayExample$GeneratedCriteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/jasper/ssm/pojo/UserDayExample.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/jasper/ssm/pojo/UserExample$Criteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/jasper/ssm/pojo/UserExample$Criterion.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/jasper/ssm/pojo/UserExample$GeneratedCriteria.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/jasper/ssm/pojo/UserExample.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/jasper/ssm/service/LoginService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/jasper/ssm/service/LoginServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/jasper/ssm/service/UserDayService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/jasper/ssm/service/UserDayServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/config/struts2/struts-login.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/config/struts2/struts-user.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/3dPrinterMonitor.war" afterPath="$PROJECT_DIR$/target/3dPrinterMonitor.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/mapper/UserMapper.class" afterPath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/mapper/UserMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/pojo/User.class" afterPath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/pojo/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/service/UserService.class" afterPath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/service/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/service/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/service/UserServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jasper/ssm/mapper/UserMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/jasper/ssm/mapper/UserMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jasper/ssm/pojo/User.class" afterPath="$PROJECT_DIR$/target/classes/com/jasper/ssm/pojo/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jasper/ssm/service/UserService.class" afterPath="$PROJECT_DIR$/target/classes/com/jasper/ssm/service/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jasper/ssm/service/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/jasper/ssm/service/UserServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/jasper/ssm/service/UserServiceImplTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/jasper/ssm/service/UserServiceImplTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/3dPrinterMonitor.iml" afterPath="$PROJECT_DIR$/3dPrinterMonitor.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/mapper/UserMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/mapper/UserMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/pojo/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/pojo/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/service/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/service/UserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/jasper/ssm/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/com/jasper/ssm/mapper/UserMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/config/struts2/struts-core.xml" afterPath="$PROJECT_DIR$/src/main/resources/config/struts2/struts-core.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/jasper/ssm/service/UserServiceImplTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/jasper/ssm/service/UserServiceImplTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/com/jasper/ssm/mapper/UserMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/config/struts2/struts-core.xml" afterPath="$PROJECT_DIR$/target/SmartBicycle_Server/WEB-INF/classes/config/struts2/struts-core.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/jasper/ssm/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/jasper/ssm/mapper/UserMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/config/struts2/struts-core.xml" afterPath="$PROJECT_DIR$/target/classes/config/struts2/struts-core.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/action/LoginAction.java" afterPath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/action/SetAction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/action/UserAction.java" afterPath="$PROJECT_DIR$/src/main/java/com/jasper/ssm/action/QueryAction.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/config/struts2/struts-login.xml" afterPath="$PROJECT_DIR$/src/main/resources/config/struts2/struts-info.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/info.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/welcome.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/success.jsp" />
     </list>
     <ignored path="SmartBicycle_Server.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -218,8 +124,8 @@
       <file leaf-file-name="UserMapper.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/com/jasper/ssm/mapper/UserMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="45" column="34" lean-forward="true" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
+            <state relative-caret-position="482">
+              <caret line="59" column="10" lean-forward="true" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
               <folding>
                 <marker date="1497444817943" expanded="true" signature="972:1080" ph="select from printer_info" />
                 <marker date="1497444817943" expanded="true" signature="1163:1373" ph="insert into user_total... " />
@@ -1227,7 +1133,7 @@
       <workItem from="1481391656921" duration="2710000" />
       <workItem from="1487339401460" duration="12825000" />
       <workItem from="1487417615867" duration="4207000" />
-      <workItem from="1497432518803" duration="11151000" />
+      <workItem from="1497432518803" duration="11363000" />
     </task>
     <task id="LOCAL-00001" summary="finish update">
       <created>1480909320038</created>
@@ -1264,11 +1170,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481208826074</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="添加温湿度">
+      <created>1497446337823</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1497446337823</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69596000" />
+    <option name="totallyTimeSpent" value="69808000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1337,7 +1250,8 @@
     <MESSAGE value="finish response" />
     <MESSAGE value="local debug done" />
     <MESSAGE value="change sth" />
-    <option name="LAST_COMMIT_MESSAGE" value="change sth" />
+    <MESSAGE value="添加温湿度" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加温湿度" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1857,8 +1771,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/jasper/ssm/mapper/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="45" column="34" lean-forward="true" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
+        <state relative-caret-position="482">
+          <caret line="59" column="10" lean-forward="true" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
           <folding>
             <marker date="1497444817943" expanded="true" signature="972:1080" ph="select from printer_info" />
             <marker date="1497444817943" expanded="true" signature="1163:1373" ph="insert into user_total... " />
